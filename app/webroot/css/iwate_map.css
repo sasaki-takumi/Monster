@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/* 共通部分 */
+/*body{
+	background-color: aqua;
+}*/
+
+body{
+	margin:0;
+	padding:0;
+	/*background-color:#dcdcdc;*/
+	background: #ffffff url('../img/TopImg2.JPG');
+	background-repeat: no-repeat;            /* 背景を繰り返さない */
+  	background-position: 50% 50%;            /* 背景画像の位置は画面中央 */
+  	background-attachment:fixed;             /* 背景画像を固定する */
+  	/*overflow: hidden;*/
+	/*min-width: 10px;*/
+}
+
+.ui-page {/*jquery mobileで背景を指定する場合のクラス*/
+	margin:0;
+	padding:0;
+	/*background-color:#dcdcdc;*/
+	background: #ffffff url('../img/TopImg2.JPG');
+	background-repeat: no-repeat;            /* 背景を繰り返さない */
+  	background-position: 50% 50%;            /* 背景画像の位置は画面中央 */
+  	background-attachment:fixed;             /* 背景画像を固定する */
+  	/*overflow: hidden;*/
+	/*min-width: 10px;*/
+}
+
+#imagemap {
+	margin: 0px auto;
+	padding: 0px;
+	background: transparent url('../img/iwate.png') 0px 0px no-repeat;
+
+	width: 900px;
+	height: 1300px;
+	position: relative;
+}
+#imagemap li {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	list-style: none;
+	font-size: 14px;
+}
+#imagemap a {
+	position: absolute;
+}
+#imagemap a span {
+	display: none;
+}
+
+
+/* 北上市 */
+#kitakami_shi {
+	top: 650px;
+	left: 0px;
+	z-index: 1;	
+}
+#kitakami_shi a {
+	width: 450px;
+	height: 475px;
+}
+#kitakami_shi a:hover {
+	background: transparent url('../img/iwate.png') -1900px -2000px no-repeat;
+}
+/* 花巻市 */
+#hanamaki_shi { /*切り替える前の画像の位置*/
+	top: 650px;
+	left: 150px;
+	z-index: 3;	
+}
+#hanamaki_shi a { /* 切り替える後の画像の大きさ */
+	width: 375px;
+	height: 257px;
+}
+#hanamaki_shi a:hover { /* 切り替える後の画像の位置 */
+	background: transparent url('../img/iwate.png') -1100px -650px no-repeat;
+}
+
+/* 遠野市 */
+#tono_shi {
+	top: 690px;
+	left: 383px;
+}
+#tono_shi a {
+	width: 420px;
+	height: 430px;
+}
+#tono_shi a:hover {
+	background: transparent url('../img/iwate.png') -2285px -4740px no-repeat;
+}
+
+/* 宮古市 */
+#miyako_shi {
+	top: 480px;
+	left: 410px;
+}
+#miyako_shi a {
+	width: 445px;
+	height: 370px;
+}
+#miyako_shi a:hover {
+	background: transparent url('../img/iwate.png') -1360px -3180px no-repeat;
+}
+/* 岩泉町 */
+#iwaizumi_tyo { /*切り替える前の画像の位置*/
+	top: 313px;
+	left: 440px;
+}
+#iwaizumi_tyo a { /* 切り替える後の画像の大きさ */
+	width: 367px;
+	height: 291px;
+}
+#iwaizumi_tyo a:hover { /* 切り替える後の画像の位置 */
+	background: transparent url('../img/iwate.png') -440px -1665px no-repeat;
+}
+
+/* 久慈市 */
+#kuzi_shi {
+	top: 20px;
+	left: 420px;
+}
+#kuzi_shi a {
+	width: 315px;
+	height: 333px;
+}
+#kuzi_shi a:hover {
+	background: transparent url('../img/iwate.png') -420px -2720px no-repeat;
+}
+
+/* 二戸市 */
+#ninohe_shi {
+	top: 77px;
+	left: 229px;
+	z-index: 1;	
+
+}
+#ninohe_shi a {
+	width: 222px;
+	height: 225px;
+}
+#ninohe_shi a:hover {
+	background: transparent url('../img/iwate.png') -230px -4128px no-repeat;
+}
+/* 盛岡市 */
+#morioka_shi {
+	top: 409px;
+	left: 200px;
+}
+#morioka_shi a {
+	width: 327px;
+	height: 285px;
+}
+#morioka_shi a:hover {
+	background: transparent url('../img/iwate.png') -2100px -3110px no-repeat;
+}
+/* 岩手町 */
+#iwate_tyo {
+	top: 163px;
+	left: 283px;
+}
+#iwate_tyo a {
+	width: 290px;
+	height: 315px;
+}
+#iwate_tyo a:hover {
+	background: transparent url('../img/iwate.png') -1234px -1515px no-repeat;
+}
+
+/* 雫石町 */
+#sizukuishi_tyo {
+	top: 170px;
+	left: 54px;
+}
+#sizukuishi_tyo a {
+	width: 270px;
+	height: 550px;
+}
+#sizukuishi_tyo a:hover {
+	background: transparent url('../img/iwate.png') -1004px -4220px no-repeat;
+}
+
+/* 一関市 */
+#itinoseki_shi {
+	top: 986px;
+	left: 72px;
+}
+#itinoseki_shi a {
+	width: 580px;
+	height: 305px;
+}
+#itinoseki_shi a:hover {
+	background: transparent url('../img/iwate.png') -1973px -986px no-repeat;
+}
+
+
+/* ●日本地図下の地域リスト */
+#area {
+	margin: 20px auto;
+	width: 600px;
+}
+#area li {
+	float:left;
+	text-indent:-5px;
+	font-size: 14px;
+	font-family: sans-serif;
+	padding: 0 30px 0 0;
+}
+#area li a {
+	text-decoration: none;
+	color: #2d67ee;
+}
+#area li a:hover {
+	text-decoration: underline;
+	color: #f1710f;
+}
+
