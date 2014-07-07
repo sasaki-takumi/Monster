@@ -9,7 +9,7 @@
 	    <?php echo $this->Form->end('ログイン'); ?>
 	    <a href="http://49.212.46.130/~g031k068/g031k068/cake2/monsters/useradd" id="switch" class="label btn-primary">新規登録</a>
    	
-		<?php echo $this->Html->link('twitter',array('action' => 'twlogin')); ?>
+		<?php //echo $this->Html->link('twitter',array('action' => 'twlogin')); ?>
 		<?php echo $this->Html->link('Facebook',array('action' => 'fblogin')); ?>
 	</div>
 <?php $this->end(); ?>
